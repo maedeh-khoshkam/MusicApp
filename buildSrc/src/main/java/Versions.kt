@@ -7,7 +7,7 @@ object Versions {
 
     // Core dependencies
     const val javaxInjectVersion = "1"
-    const val coreKtxVersion = "1.9.0"
+    const val coreKtxVersion = "1.6.0"
     const val appCompatVersion = "1.3.1"
     const val materialVersion = "1.4.0"
     const val constraintLayoutVersion = "2.1.0"
