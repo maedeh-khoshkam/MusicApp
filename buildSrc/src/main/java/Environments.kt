@@ -4,6 +4,6 @@ object Environments {
         const val appId = "com.test.musicapp"
         const val appVersionCode = 1
         const val appVersionName = "1.0"
-        const val baseUrl = "https://itunes.apple.com/search"
+        const val baseUrl = "https://itunes.apple.com/"
     }
 }
