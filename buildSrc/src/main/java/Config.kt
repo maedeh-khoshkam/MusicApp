@@ -4,8 +4,8 @@ object Config {
 
         // Android sdk and version
         const val androidMinSdkVersion = 21
-        const val androidTargetSdkVersion = 33
-        const val androidCompileSdkVersion = 33
+        const val androidTargetSdkVersion = 32
+        const val androidCompileSdkVersion = 32
         const val androidBuildToolsVersion = "30.0.2"
     }
 
