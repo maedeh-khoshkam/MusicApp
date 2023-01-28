@@ -1,7 +1,7 @@
 # MovieMo
 The MusicApp - App consuming a [Search API](https://developer.apple.com/library/archive/documentation/AudioVideo/Conceptual/iTuneSearchAPI/) to search for content within the iTunes Store, App Store, iBooks Store and Mac App Store it has been built with clean architecture principles, Repository Pattern, and MVVM pattern as well as Architecture Components.
 
-This app shows the usage of the new Navigation Architecture Component.
+This app shows the usage of the new Navigation Architecture Component also it has some unit tests in presentation layer.
 
 **App features:**
 - Music search page
@@ -40,7 +40,7 @@ Uses concepts of the notorious Uncle Bob's architecture called [Clean Architectu
   - [ViewModel](https://developer.android.com/topic/libraries/architecture/viewmodel) - Stores UI-related data that isn't destroyed on UI changes.
   - [Room](https://developer.android.com/topic/libraries/architecture/room) - Used to create room db and store the data.
   - [Navigation](https://developer.android.com/guide/navigation/navigation-getting-started) - Used to navigate between fragments
-  - [Data Binding](https://developer.android.com/topic/libraries/data-binding) - Used to bind UI components in your XML layouts.
+  - [View Binding](https://developer.android.com/topic/libraries/data-binding) - Used to bind UI components.
 - [Material-Components](https://github.com/material-components/material-components-android) - Material design components like ripple animation, cardView.
 - [Retrofit](https://github.com/square/retrofit) - Used for REST api communication.
 - [OkHttp](http://square.github.io/okhttp/) - HTTP client that's efficient by default: HTTP/2 support allows all requests to the same host to share a socket
