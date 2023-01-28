@@ -8,6 +8,7 @@ import androidx.fragment.app.viewModels
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.test.domain.models.MusicParams
 import com.test.domain.models.MusicResponseUiMode
+import com.test.musicapp.R
 import com.test.musicapp.base.BaseFragment
 import com.test.musicapp.databinding.FragmentMusicSearchBinding
 import com.test.musicapp.extension.gone
@@ -48,7 +49,7 @@ class MusicSearchFragment : BaseFragment<FragmentMusicSearchBinding, MusicSearch
     }
 
     private fun getMusicList(term: String) {
-        val params = MusicParams(term, "DK")
+        val params = MusicParams(term, getString(R.string.str_country))
         mViewModel.getMusicList(params)
     }
 
@@ -76,7 +77,6 @@ class MusicSearchFragment : BaseFragment<FragmentMusicSearchBinding, MusicSearch
             }
             is MusicResponseUiMode.Error -> {
                 mBinding.loading.gone()
-                handleErrorMessage(event.error)
             }
         }
     }
