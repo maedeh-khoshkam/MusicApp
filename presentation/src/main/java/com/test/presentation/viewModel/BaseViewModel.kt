@@ -27,4 +27,9 @@ abstract class BaseViewModel(private val contextProvider: CoroutineContextProvid
         }
     }
 
+    public override fun onCleared() {
+        super.onCleared()
+        job.cancel()
+    }
+
 }
