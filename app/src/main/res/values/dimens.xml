@@ -5,11 +5,12 @@
     <dimen name="elevation">3dp</dimen>
     <dimen name="normal_radius">10dp</dimen>
     <dimen name="normal_font_size">14sp</dimen>
-    <dimen name="image_height">100dp</dimen>
-    <dimen name="image_width">100dp</dimen>
+    <dimen name="large_font_size">16sp</dimen>
+    <dimen name="image_height">120dp</dimen>
+    <dimen name="image_width">120dp</dimen>
     <dimen name="small_padding">8dp</dimen>
     <dimen name="standard_padding">16dp</dimen>
-    <dimen name="large_font_size">18sp</dimen>
+    <dimen name="xlarge_font_size">18sp</dimen>
     <dimen name="edit_text_height">52dp</dimen>
     <dimen name="stroke_width">1dp</dimen>
 </resources>

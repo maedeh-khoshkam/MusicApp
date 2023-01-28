@@ -36,7 +36,8 @@ class MusicSearchAdapter @Inject constructor(
         BaseViewHolder<MusicModel>(binding.root) {
         override fun onBind(item: MusicModel) {
             binding.apply {
-                musicTitle.text = item.trackName
+                tvTrackName.text = item.trackName
+                glide.load(item.artworkUrl60).into(musicImage)
             }
         }
 

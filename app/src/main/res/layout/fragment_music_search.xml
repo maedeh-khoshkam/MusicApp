@@ -19,13 +19,15 @@
         app:hintAnimationEnabled="true"
         app:boxStrokeWidth="@dimen/stroke_width"
         android:layout_margin="@dimen/standard_margin"
+        app:hintTextAppearance="@style/TextAppearance.MaterialComponents.Body2"
+        app:placeholderTextAppearance="@style/TextAppearance.MaterialComponents.Body2"
         app:layout_constraintTop_toTopOf="parent">
 
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="@dimen/edit_text_height"
             android:id="@+id/etSearch"
-            android:paddingBottom="@dimen/standard_margin"
+            android:paddingTop="@dimen/small_padding"
             android:textAppearance="@style/TextAppearance.MaterialComponents.Body2" />
 
     </com.google.android.material.textfield.TextInputLayout>
