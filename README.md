@@ -1,5 +1,5 @@
 # MovieMo
-The MusicApp - App consuming a [Movie API](https://developer.apple.com/library/archive/documentation/AudioVideo/Conceptual/iTuneSearchAPI/) to search for content within the iTunes Store, App Store, iBooks Store and Mac App Store it has been built with clean architecture principles, Repository Pattern, and MVVM pattern as well as Architecture Components.
+The MusicApp - App consuming a [Search API](https://developer.apple.com/library/archive/documentation/AudioVideo/Conceptual/iTuneSearchAPI/) to search for content within the iTunes Store, App Store, iBooks Store and Mac App Store it has been built with clean architecture principles, Repository Pattern, and MVVM pattern as well as Architecture Components.
 
 This app shows the usage of the new Navigation Architecture Component.
 
