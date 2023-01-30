@@ -34,7 +34,4 @@ abstract class BaseAdapter<T> : RecyclerView.Adapter<BaseViewHolder<T>>() {
         onItemClickListener = listener
     }
 
-    interface Binder<in T> {
-        fun bind(item: T)
-    }
 }

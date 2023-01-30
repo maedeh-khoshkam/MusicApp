@@ -7,7 +7,6 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.viewbinding.ViewBinding
 import com.test.musicapp.extension.showSnackBar
-import com.test.musicapp.utils.dismissLoadingDialog
 import com.test.presentation.viewModel.BaseViewModel
 import timber.log.Timber
 
@@ -32,7 +31,6 @@ abstract class BaseFragment<VB : ViewBinding, VM : BaseViewModel> : Fragment() {
 
     protected open fun handleErrorMessage(message: String?) {
         if (message.isNullOrBlank()) return
-        dismissLoadingDialog()
         Timber.e(message)
         showSnackBar(mBinding.root, message)
     }
