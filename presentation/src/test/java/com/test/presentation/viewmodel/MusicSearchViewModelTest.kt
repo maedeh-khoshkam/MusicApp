@@ -48,8 +48,9 @@ class MusicSearchViewModelTest : PresentationBaseTest() {
             // Arrange (Given)
             val term = "Terr"
             val country = "DK"
+            val media = "music"
             val musicResponse = FakePresentationData.getMusicResponse(term, country)
-            val params = MusicParams(term, country)
+            val params = MusicParams(term, country, media)
             whenever(getMusicListUseCase(params)).thenReturn(flowOf(musicResponse))
             // Act (When)
             musicSearchViewModel.getMusicList(params)
@@ -65,8 +66,9 @@ class MusicSearchViewModelTest : PresentationBaseTest() {
             // Arrange (Given)
             val term = ""
             val country = "DK"
+            val media = "music"
             val musicResponse = FakePresentationData.getMusicResponse(term, country)
-            val params = MusicParams(term, country)
+            val params = MusicParams(term, country, media)
             whenever(getMusicListUseCase(params)).thenReturn(flowOf(musicResponse))
             // Act (When)
             musicSearchViewModel.getMusicList(params)
@@ -83,7 +85,8 @@ class MusicSearchViewModelTest : PresentationBaseTest() {
             val errorMessage = "Internal server error"
             val term = "s"
             val country = "DK"
-            val params = MusicParams(term, country)
+            val media = "music"
+            val params = MusicParams(term, country, media)
             whenever(getMusicListUseCase(params)).thenAnswer {
                 throw IOException(errorMessage)
             }
