@@ -6,4 +6,5 @@
     <string name="str_date">Release Date : %1$s</string>
     <string name="str_artist_name">Artist : %1$s from %2$s</string>
     <string name="str_description">The genre of this collection is %1$s it was sold at %2$s</string>
+    <string name="str_media_type">music</string>
 </resources>

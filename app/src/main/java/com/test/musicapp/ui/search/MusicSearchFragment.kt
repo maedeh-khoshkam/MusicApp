@@ -14,6 +14,7 @@ import com.test.musicapp.databinding.FragmentMusicSearchBinding
 import com.test.musicapp.extension.gone
 import com.test.musicapp.extension.observe
 import com.test.musicapp.extension.visible
+import com.test.musicapp.utils.encodeText
 import com.test.presentation.viewModel.MusicSearchViewModel
 import dagger.hilt.android.AndroidEntryPoint
 import javax.inject.Inject
@@ -49,7 +50,12 @@ class MusicSearchFragment : BaseFragment<FragmentMusicSearchBinding, MusicSearch
     }
 
     private fun getMusicList(term: String) {
-        val params = MusicParams(term, getString(R.string.str_country))
+        val params =
+            MusicParams(
+                term,
+                getString(R.string.str_country),
+                getString(R.string.str_media_type)
+            )
         mViewModel.getMusicList(params)
     }
 
